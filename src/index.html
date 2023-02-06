@@ -1,17 +1,67 @@
+<!-- 
+    File: index.html
+    Author: Kiraly Peter
+    Copyright: 2023, Kiraly Peter
+    Group: SZOFT-1-2-E
+    Date: 2023-02-07
+    Github: https://github.com/KiralyPeter/dolgozat-3.git
+    Licence: GNU GPL
+ -->
+
+<!-- 
+    Feladat 0327
+
+    Egy ellipszis alapú kúp térfogatát kell kiszámítani. 
+    Mivel az alap egy ellipszis így két sugara van az r_1 és az r_2. 
+    Kérje be a kúp magasságát és két sugarat, számítsa ki a térfogatát az alábbi képlet alapján: 
+
+    V = (1/3)Pi*r1*r2*h
+
+    Az eredményt írja a képernyőre 3 tizedesjegy pontossággal.
+    Mentés: elipkup 
+ -->
+
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NodeJS_Sablon</title>
+    <title>Webprogramozas dolgozat 3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
     
     <div class="container">
-        <h1>NodeJS_Sablon</h1>
+        
+        <div class="mt-3">
+            <input type="text" placeholder="Radius 1" class="form-control" id="r1">
+        </div>
+
+        <div class="mt-3">
+            <input type="text" placeholder="Radius 2" class="form-control" id="r2">
+        </div>
+
+        <div class="mt-3">
+            <input type="text" placeholder="Height" class="form-control" id="h">
+        </div>
+
+        <button id="calcButton" class="btn btn-primary mt-3">Calculate</button>
+
+        <div class="mt-3">
+            <label for="volumeresult" class="form-label">Volume</label>
+            <input type="text" readonly class="form-control" id="result">
+        </div>
+
+
     </div>
+
+
+    <div class="about text-center mt-3">
+        Kiraly Peter, 2023-02-07, SZOFT-1-2-E
+    </div>
+
 
     <script src="app.js"></script>
     
