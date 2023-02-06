@@ -29,5 +29,5 @@ calcButton.addEventListener('click', ()=> {
 
 function calcVolume(r1, r2, h){
     let volume = (1/3)*Math.PI*r1*r2*h;
-    return volume;
+    return volume.toFixed(3);
 }
