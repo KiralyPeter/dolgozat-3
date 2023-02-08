@@ -4,3 +4,14 @@
     margin-top: 25px;
     border-radius: 15px;
 }
+
+.picture{
+    float: right;
+    scale: 150%;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.input_field{
+    margin-right: 500px;
+}
